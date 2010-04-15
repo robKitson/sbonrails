@@ -1,0 +1,24 @@
+%h2.page-title
+    Sign Up
+
+%hr
+
+= error_messages_for :user
+- form_for @user, :html => {:class => 'special-labels'} do |form|
+
+    %span.wrap
+        = form.label :email
+        = form.text_field :email
+
+    %span.wrap
+        = form.label :password
+        = form.password_field :password
+
+    %span.wrap
+        = form.label :password_confirmation, "Confirm Password"
+        = form.password_field :password_confirmation
+
+
+    %button.large.blue.button
+        <span>Update</span>
+

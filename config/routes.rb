@@ -2,6 +2,7 @@ ActionController::Routing::Routes.draw do |map|
   map.presentation_ideas "/presentations/ideas", :controller => 'presentations', :action => 'ideas'
   map.upcoming_presentations "/presentations/upcomng", :controller => 'presentations', :action => 'upcoming'
   map.past_presentations "/presentations/past", :controller => 'presentations', :action => 'past'
+  map.resources :users
   map.resources :presentations
   map.resources :likes
   map.resource :session
