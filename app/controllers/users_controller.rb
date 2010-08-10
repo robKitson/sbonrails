@@ -21,5 +21,7 @@ class UsersController < Clearance::UsersController
     end
   end
 
+  def test2
+  end
 end
 
